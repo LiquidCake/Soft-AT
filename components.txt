@@ -75,8 +75,8 @@ Load current depends on your PC consumption, generally 10A is good
 						
 						
 # Battery						
-1 - any 6v battery set capable to drive power relay which consumes ~100ma with some peak on launch						
-E.g. generic battery bay for 4 AAA batteries						
+1 - any 6v battery set capable to drive power relay which consumes ~100ma (with some peak at launch) for short period between power on and PSU is fully started
+E.g. generic battery bay for 4 AA batteries
 						
 						
 # Buttons						
