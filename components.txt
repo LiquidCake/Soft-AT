@@ -12,7 +12,7 @@ Cyramics
 9 R1,R2,R3,R4,R5,R6,R7,R9,R16 - 10k						
 4 R8,R18,R20,R23 - 1k						
 1 R10 - 8200k						
-1 R11 - 2900k                     -- adjustable, to set timer tick interval						
+1 R11 - 2900k                     -- adjustable, to set timer tick interval
 5 R12,R13,R14,R15,R19 - 330						
 1 R17 - 910k						
 1 R21 - 160						
@@ -54,7 +54,9 @@ Cyramics
 And if you use CPC1117N optoMOS relay and it is in SMD packaging like in my case - you will need to solder it somehow, e.g. i soldered i on top of DIP4 IC pannel						
 						
 1 RL2 - Power relay module - 5v logically controlled active-low normally-open 2-channel relay - e.g. active-low "2 CHANNEL 5V 10A RELAY MODULE" for Arduino based on SRD-05VDC-SL-C						
-Load current depends on your PC consumption, generally 10A is good						
+Load current depends on your PC consumption, generally 10A is good	
+
+Suggest to mount by drilling holes (see them on silk) in PCB and using cable ties
 						
 						
 # PCB pin header 2-pin pairs, e.g. PLS-40:						
@@ -76,12 +78,14 @@ Load current depends on your PC consumption, generally 10A is good
 						
 # Battery						
 1 - any 6v battery set capable to drive power relay which consumes ~100ma (with some peak at launch) for short period between power on and PSU is fully started
-E.g. generic battery bay for 4 AA batteries
-						
+E.g. generic flat battery bay for 4 AA batteries
+
+Suggest to mount by drilling holes (see them on silk) in PCB and using cable ties
+
 						
 # Buttons						
-1 - push button for soft power, like "power sw" in ATX PC case						
-1 - push button with 2 pairs of contacts - for force-shutdown						
+1 - push button for soft power, like "power sw" in ATX PC case (or just use soft power button of PC case if using ATX case)					
+2 - push buttons for force-shutdown (or you may use PC reset button for upper button contacts pair + another custom button mounted on board back pannel for lower pair)					
 						
 						
 # Cabels						
@@ -93,8 +97,8 @@ WARNING - high voltage is here, even when relay is open
 						
 4 - short cables with female connectors (like NINIGI NSR-02) on both sides to connect power relay module 5v power / control pins with PCB header pins						
 						
-Also:						
-Battery block,						
+# Also:						
+Battery bay,						
 Soft power button,						
 Force shutdown buttons pair -						
 all must end with cables with female connectors to put on PCB header pins						
