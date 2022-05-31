@@ -19,7 +19,9 @@ If this port is assigned in Windows to other device - some values will be eventu
 
 ### second - IRQ number 
 IRQ3-IRQ5 are supported by board. Choose IRQ that is less probale to be used by other devices in system and put its number in config file, then set corresponding jumper on board (JP1 is IRQ3, JP2 is IRQ4, JP3 is IRQ5).  
-*Attention: IRQ you chose may conflict with one of COM/PARALLEL ports!  *
+
+*Attention: IRQ you chose may conflict with one of COM/PARALLEL ports!*  
+
 Suggested value is 003 (IRQ3) - commonly used by COM2 port which could be easily disabled in BIOS (and then IRQ 3 is free to use)  
 
 Also, this IRQ must be "reserved" in Windows Device Manager (in "Computer" properties)  
