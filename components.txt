@@ -1,0 +1,105 @@
+# Capacitors						
+Electrolyte						
+3 C1,C7,C8 - 10mkf, 16v						
+1 C2 - 470mkf, 16v						
+						
+Cyramics						
+2 C3,C5 - 100nF						
+2 C4,C6 - 10nF						
+						
+						
+# Resistors all 0.125w, 1 adjustable (R11)						
+9 R1,R2,R3,R4,R5,R6,R7,R9,R16 - 10k						
+4 R8,R18,R20,R23 - 1k						
+1 R10 - 8200k						
+1 R11 - 2900k                     -- adjustable, to set timer tick interval						
+5 R12,R13,R14,R15,R19 - 330						
+1 R17 - 910k						
+1 R21 - 160						
+1 R22 - 560k						
+						
+						
+# Diodes						
+2 D2,D3 - 1N4148						
+1 D1 - 11DQ04 (Shotky)						
+						
+						
+# Transistors						
+1 Q3 - 2N2222						
+1 Q4 - 2N2907A (2N2905)						
+						
+						
+# ICs						
+2 U1,U2 - 74LS85 (КР1533СП1)						
+2 U3,U4 - 74LS193 (К555ИЕ7)						
+1 U5 - 74LS04 (К555ЛН1)						
+2 U6,U11 - 74LS08 (К555ЛИ1)						
+2 U7,U12 - NE555 (КР1006ВИ1)						
+2 U8,U9 - 74LS02 (К555ЛЕ1)						
+1 U10 - 74LS32 (К555ЛЛ1)						
+1 U13 - 74S373 (К555ИР22)						
+						
+						
+# Pannels for ICs (Optional)						
+2 - DIP8						
+6 - DIP14						
+4 - DIP16						
+1 - DIP20						
+(possibly 1 DIP4 pannel to solder CPC1117N on)						
+						
+						
+						
+# Relay						
+1 RL1 - CPC1117N - or any normally-closed 5v relay capable of 150ma load current						
+And if you use CPC1117N optoMOS relay and it is in SMD packaging like in my case - you will need to solder it somehow, e.g. i soldered i on top of DIP4 IC pannel						
+						
+1 RL2 - Power relay module - 5v logically controlled active-low normally-open 2-channel relay - e.g. active-low "2 CHANNEL 5V 10A RELAY MODULE" for Arduino based on SRD-05VDC-SL-C						
+Load current depends on your PC consumption, generally 10A is good						
+						
+						
+# PCB pin header 2-pin pairs, e.g. PLS-40:						
+3 - for irq jumpers						
+1 - for battery block 6v						
+1 - for soft power button						
+2 - for power relay power/control						
+2 - for force shutdown buttons						
+(9 pairs / 18pins total)						
+						
+						
+# Molex power connector						
+1 - molex power connector e.g. NS25-W4K-SM WH-04R						
+						
+						
+# DIP switch						
+1 DSW1 - 7 contact pairs DIP switch						
+						
+						
+# Battery						
+1 - any 6v battery set capable to drive power relay which consumes ~100ma with some peak on launch						
+E.g. generic battery bay for 4 AAA batteries						
+						
+						
+# Buttons						
+1 - push button for soft power, like "power sw" in ATX PC case						
+1 - push button with 2 pairs of contacts - for force-shutdown						
+						
+						
+# Cabels						
+4 - short but thick power cables to connect PC's AT power supply to power relay load terminals						
+Must have proper-size terminals attached to one end (same as on AT power supply button) - e.g. DEGSON K12-00AH						
+Isolate carefully						
+						
+WARNING - high voltage is here, even when relay is open						
+						
+4 - short cables with female connectors (like NINIGI NSR-02) on both sides to connect power relay module 5v power / control pins with PCB header pins						
+						
+Also:						
+Battery block,						
+Soft power button,						
+Force shutdown buttons pair -						
+all must end with cables with female connectors to put on PCB header pins						
+(4 pairs of wires + connectors)						
+						
+						
+# Jumper						
+1 - jumper for IRQ selection						
