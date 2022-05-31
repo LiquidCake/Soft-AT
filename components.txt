@@ -67,7 +67,7 @@ Load current depends on your PC consumption, generally 10A is good
 						
 						
 # Molex power connector						
-1 - molex power connector e.g. NS25-W4K-SM WH-04R						
+1 - molex power connector - male header with spacing 2.54mm, e.g. NS25-W4K-SM WH-04R						
 						
 						
 # DIP switch						
