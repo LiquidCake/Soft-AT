@@ -1,0 +1,1 @@
+nmake /f softat.mak > res.txt
