@@ -42,7 +42,11 @@ AT switch connects `white-to-blue`, `black-to-brown` so relay RL2 must do the sa
 - adjust R11 so board timer ticks ~1sec at a time when counting for shutdown delay - e.g. set it to middle value and change a bit to find proper position empirically during device testing, having set driver shutdown delay to known value in seconds :)
 - insert batteries into mounted battery bay (tested with `AA` batteries)  
 make sure not to forget batteries inside bay for a long time because of possible leakage. Also for that reason it makes sense to use a very bottom ISA slot for vertical PC cases  
-- install driver (.vxd and config) using install.bat (tested to work on Windows 98) - check readme for driver  
+- install driver (.vxd and config) using install.bat (tested to work on Windows 98) - check readme for driver    
+
+#####
+Shutdown process wont be triggered after pressing soft power button if windows is in fullscreen dos mode (like dos game)  
+Workaround is possible but would require heavy changes
 
 ##### force shutdown buttons
 There are 2 force shutdown buttons:  
