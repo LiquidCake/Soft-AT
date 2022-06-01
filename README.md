@@ -39,7 +39,7 @@ AT switch connects `white-to-blue`, `black-to-brown` so relay RL2 must do the sa
 - pick free IRQ and IO port address and set it on board phisically (check driver readme for more info on IRQ and IO port picking)  
 	1. pick IRQ that is free on your PC and set it by board jumper `JP1/JP2/JP3` (e.g. `IRQ 3`)
 	2. pick IO port that is free on your PC, convert its hex number to binary and set higher 7 bits by board DIP switch DSW1 (e.g. if using IO port address HEX `220` - convert to binary: `1000100000` and take 7 higher bits - `1000100`)
-- adjust R11 so timer ticks ~1sec at a time - e.g. set it to middle value and change a bit to get find delay empirically during device testing, having set driver delay to known value in seconds :)
+- adjust R11 so board timer ticks ~1sec at a time when counting for shutdown delay - e.g. set it to middle value and change a bit to find proper position empirically during device testing, having set driver shutdown delay to known value in seconds :)
 - insert batteries into mounted battery bay (tested with `AA` batteries)  
 make sure not to forget batteries inside bay for a long time because of possible leakage. Also for that reason it makes sense to use a very bottom ISA slot for vertical PC cases  
 - install driver (.vxd and config) using install.bat (tested to work on Windows 98) - check readme for driver  
@@ -49,7 +49,7 @@ There are 2 force shutdown buttons:
 `1` for shutting down operating PC (resets power relay RL2) - on PCB this button's contacts are top pair  
 it would make sense to connect PC reset button as this one
 
-`2` for disabling RL1 if PC didnt start after it was enabled - on PCB this button's contacts are bottom pair  
+`2` for disabling RL1 that initially opens pre-start battery power for RL2 - may be needed if PC didnt start after RL1 opened e.g. due wall power issues - on PCB this button's contacts are bottom pair  
 it would make sense to connect some external button as this one, e.g. ideally mount such button on back pannel bar of ISA board
 
 ##### BTW
