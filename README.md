@@ -19,7 +19,7 @@ when user clicks on shutdown in windows start menu - board receives signal and w
 
 **For same reason i wasn't able to order and test board with actual 74LS series chips so it was tested only with 74LS's Soviet clones that i had easily available. They should be pretty much identical to original chips though**
 
-**And this is also why there are no pictures of assembled and properly installed board**
+**And this is also why there are no real pictures of assembled and properly installed board, only 3d renders**
 
 ### Description:
 Board was developed using `Proteus 8`, project files are provided as well as schematics and model screenshots  
@@ -34,7 +34,7 @@ DOUBLE CHECK:
 AT switch connects `white-to-blue`, `black-to-brown` so relay RL2 must do the same
 - connect soft power button that will be used as PC power button  
 (e.g. ideally you may put your AT motherboard and AT PSU into ATX PC case which has soft power button with proper header by default, though it is possible only if holes on board match ATX case board mount points)  
-- probably connect reset button as force shutdown button `1` (see details below)
+- probably connect reset button as force shutdown button `1` (see `force shutdown buttons` details below)
 - connect one of PSU molex power connector to molex header on board (use smaller one, like one used for 3.5 floppies)  
 - pick free IRQ and IO port address and set it on board phisically (check driver readme for more info on IRQ and IO port picking)  
 	1. pick IRQ that is free on your PC and set it by board jumper `JP1/JP2/JP3` (e.g. `IRQ 3`)
@@ -46,7 +46,7 @@ make sure not to forget batteries inside bay for a long time because of possible
 
 #####
 Shutdown process wont be triggered after pressing soft power button if windows is in fullscreen dos mode (like dos game)  
-Workaround is possible but would require heavy changes
+(workaround to somehow make it work is possible, but would require both hardware and sofrware changes)
 
 ##### force shutdown buttons
 There are 2 force shutdown buttons:  
