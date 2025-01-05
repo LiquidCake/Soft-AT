@@ -21,6 +21,8 @@ when user clicks on shutdown in windows start menu - board receives signal and w
 
 **And this is also why there are no real pictures of assembled and properly installed board, only 3d renders**
 
+![render](https://github.com/LiquidCake/Soft-AT/blob/master/softAT_3d_top.png)
+
 ### Description:
 Board was developed using `Proteus 8`, project files are provided as well as schematics and model screenshots  
 
