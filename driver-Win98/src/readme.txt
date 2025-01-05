@@ -1,3 +1,5 @@
+How to build on Windows 98:
+
 1. install C compiler - e.g. Visual CPP 5.00.7022
 2. install VToolsD (NuMega) - e.g. SoftICE Driver Suite 2.0.1
 	it should add itself to env variables which are used in make file for includes
